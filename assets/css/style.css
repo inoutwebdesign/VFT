@@ -8,8 +8,35 @@ header {
 	padding: 0 0 1% 0;
 }
 
-main, section, footer {
+main, section {
 	padding: 1% 0;
+}
+
+/*
+.boxshadow {
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    display: block;
+    height: 2px;
+    position: relative;
+    z-index: 10;
+}
+*/
+
+.odd {
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	background-color: #fafafa;
+}
+
+.even {
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+
+video img {
+	position: absolute;
+	left: 0;
+	cursor: pointer;
 }
 
 
@@ -27,31 +54,22 @@ main, section, footer {
 	border-bottom: 1px solid #ddd;
 }
 
-#introPage main .col_2_of_2 span {
-	width: 400px;
+#introPage main .introLogin {
+	margin: 0 auto;
+	width: 30%;
 }
 
-#introPage main .col_2_of_2 span a {
-	display: block; 
-	width: 20%;
-}
-
-#introPage main .col_2_of_2 span a > span {
+#introPage main .introLogin a {
 	font-family: 'Bevan', cursive;
+	display: block; 
 	position: relative;
-	top: -30px;
-	color: #fff;
+	top: 24px;
 }
 
-.odd {
-	border-top: 1px solid #fff;
-	border-bottom: 1px solid #fff;
-	background-color: #f3f3f3;
-}
-
-.even {
-	border-top: 1px solid #ddd;
-	border-bottom: 1px solid #ddd;
+#introPage main .introLogin a > span {
+	display: block;
+	width: 95px;
+	text-align: left;
 }
 
 #introPage section.even .innerContainer {
@@ -62,12 +80,23 @@ main, section, footer {
 	margin-bottom: 1%;
 }
 
-#introPage footer .col_1_of_2 {
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+footer .col_1_of_2 {
 	text-align: right;
 }
 
-#introPage footer p {
+footer p {
 	margin: 1em 0;
+	font-size: 0.85em !important;
+}
+
+footer p,
+footer p > a:link,
+footer p > a:visited {
+	color: #aaa;
 }
 
 

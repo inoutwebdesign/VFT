@@ -14,8 +14,9 @@ body {
 	color: #131313;
 }
 
+/* Footer */
 footer {
-	margin-bottom: 2%;
+	margin-bottom: 0.35%;
 }
 
 /* ==========================================================================
@@ -82,10 +83,10 @@ p {
 
 a:link, a:visited, a:hover {
 	text-decoration: none;
+	color: #131313;
 }
 
-a:hover,
-a > span:hover {
+a:hover {
 	color: #ff7f01 !important;
 }
 

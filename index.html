@@ -17,9 +17,10 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/media.css"> 
     
-    <!-- JS CSS-Pseudo -->
-    <script src="assets/js/selectivizr-min.js"></script>   
+    <!-- JS -->
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville|Poller+One|Bowlby+One|Bevan' rel='stylesheet' type='text/css'>
+    
     <!-- Favicon --> 
 	<link rel="shortcut icon" type="image/png" href="assets/images/favicon.png"/>
     
@@ -89,16 +90,53 @@
 
                 <!-- Register / Login button -->
 
-                <span>
-                    <a href="" title="Register">
+                <div class="introLogin">
+                    <a href="" class="floatLeft" title="Register">
                         <span>REGISTER</span>
-                        <img src="assets/images/icons/icon-login.png" width="70" height="70" alt="Login">
                     </a>
-                    <a href="" title="Login">
-                        <img src="assets/images/icons/icon-login.png" width="70" height="70" alt="Login">
+
+                    <img src="assets/images/icons/icon-login.png" width="70" height="70" alt="Login">
+
+                    <a href="" class="floatRight" title="Login">
                         <span>LOGIN</span>
                     </a>
-                </span>
+                </div>
+
+                <section style="display:none">
+
+                    <!-- Register -->
+
+                    <h2>Facebook</h2>
+                    <p>Do you have a facebook account?</p>
+                    <div class="fb-login-button" data-show-faces="false" data-width="200" data-max-rows="1">Sign in with Facebook</div>
+                    
+                    <hr>
+                    
+                    <p>No facebook? You can still register for FREE.</p>
+                    <h2>Register</h2>
+                    <form action="#" method="GET">
+                    
+                        <input type="text" name="firstName" placeholder="First name">
+                        <input type="email" name="username" placeholder="Email">
+                        <input type="password" name="password" placeholder="Password">
+                        <button>Register</button>
+                        
+                        <p>Shortly you'll receiving an email to validate your account</p>
+                    </form>
+
+                    <!-- Login -->
+
+                    <form action="" method="POST">
+
+                        <input type="email" name="username" placeholder="Username">
+                        <input type="password" name="password" placeholder="Password">
+                        <button>Login</button>
+                        
+                        <a href="#" title="Forgot Password">Forgot password?</a>
+                    
+                    </form>
+
+                </section>
 
             </div>
         </div>
@@ -106,19 +144,20 @@
     </main>
 
     <section class="odd">
-
         <!-- Video section-->
 
         <div class="innerContainer">
             <div class="col_2_of_2">
+                <!-- id="easyhtml5video"  -->
 
-                <video width="640" height="360" src="http://youtu.be/XmTV62mE1PA" autobuffer controls poster="whale.png">
-                    <p>
-                        Try this page in Safari 4! Or you can 
-                        <a href="http://youtu.be/XmTV62mE1PA">download the video</a> 
-                        instead.
-                    </p>
+                <video controls="controls"  poster="assets/images/bg-image.jpg" width="640" height="360" title="promo-video">
+                    <source src="assets/videos/promo/promo-video.m4v" type="video/mp4" />
+                    <source src="assets/videos/promo/promo-video.webm" type="video/webm" />
+                    <source src="assets/videos/promo/promo-video.ogv" type="video/ogg" />
+
+                    <img alt="promo-video" src="assets/images/XXXXX-Image that says it's not supported" width="640" height="360" title="Video playback is not supported by your browser" />
                 </video>
+                
             </div>
         </div>
 
@@ -150,51 +189,14 @@
     <footer class="odd">
 
         <div class="innerContainer clearfix">
-            <div class="col_1_of_6 floatLeft"><p>T&C</p></div>
-            <div class="col_1_of_6 floatLeft"><p>Policy</p></div>
-            <div class="col_1_of_6 floatLeft"><p>Contact us</p></div>
-            <div class="col_1_of_2 floatRight"><p>Copyright - 2013 Health & Fitness Ltd</p></div>
+            <div class="col_1_of_6 floatLeft"><p><a href="" title="Terms &amp; Conditions">T&C</a></p></div>
+            <div class="col_1_of_6 floatLeft"><p><a href="" title="Policy">Policy</a></p></div>
+            <div class="col_1_of_6 floatLeft"><p><a href="" title="Contact">Contact</a></p></div>
+            <div class="col_1_of_2 floatRight"><p>&copy; 2013 Health & Fitness Ltd</p></div>
         </div>
 
     </footer>
 
-    <section style="display:none">
-
-        <!-- Register -->
-
-        <h2>Facebook</h2>
-        <p>Do you have a facebook account?</p>
-        <div class="fb-login-button" data-show-faces="false" data-width="200" data-max-rows="1">Sign in with Facebook</div>
-        
-        <hr>
-        
-        <p>No facebook? You can still register for FREE.</p>
-        <h2>Register</h2>
-        <form action="#" method="GET">
-        
-            <input type="text" name="firstName" placeholder="First name">
-            <input type="email" name="username" placeholder="Email">
-            <input type="password" name="password" placeholder="Password">
-            <button>Register</button>
-            
-            <p>Shortly you'll receiving an email to validate your account</p>
-        </form>
-
-        <!-- Login -->
-
-        <form action="" method="POST">
-
-            <input type="email" name="username" placeholder="Username">
-            <input type="password" name="password" placeholder="Password">
-            <button>Login</button>
-            
-            <a href="#" title="Forgot Password">Forgot password?</a>
-        
-        </form>
-
-    </section>
-
-	
     <!-- All javascript
 	============================================================ -->
 	<!-- Placed at the end of the document so the pages load faster -->
@@ -207,7 +209,6 @@
 	</script>
     <script src="assets/js/scripts.js"></script>
 	<script src="assets/js/algorithm.js"></script>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	
 	<!-- Google Analytics
 	============================================================ -->
