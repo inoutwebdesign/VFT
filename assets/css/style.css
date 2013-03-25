@@ -54,22 +54,64 @@ video img {
 	border-bottom: 1px solid #ddd;
 }
 
-#introPage main .introLogin {
+#introPage main .userAccessBox {
 	margin: 0 auto;
 	width: 30%;
 }
 
-#introPage main .introLogin a {
+#introPage main .userAccessBox a {
 	font-family: 'Bevan', cursive;
 	display: block; 
 	position: relative;
 	top: 24px;
+	color: #fff;
 }
 
-#introPage main .introLogin a > span {
+#introPage main .userAccessBox a > span {
 	display: block;
 	width: 95px;
 	text-align: left;
+	text-transform: uppercase;
+}
+
+#introPage main #hiddenUserAccess {
+	display: none;
+	background-color: #fff;
+	padding: 1em 0;
+	text-align: right;
+}
+
+#introPage main #hiddenUserAccess .close {
+	position: relative;
+	top: -10px;
+	right: 10px;
+	background: url('../images/icons/icon-close.png') no-repeat 0 0 transparent;
+	width: 30px;
+	height: 30px;
+	background-size: 100%;
+}
+
+#introPage main #hiddenUserAccess .col_1_of_2 {
+	float: left;
+	margin-top: 1em;
+}
+
+#introPage main #hiddenUserAccess #register,
+#introPage main #hiddenUserAccess #login {
+	text-align: center;
+}
+
+#introPage main #hiddenUserAccess #register h4 {
+	margin: 0.3em 0;
+}
+
+#introPage main #hiddenUserAccess #register h5 {
+	margin-bottom: 1em;
+	color: #333 !important;
+}
+
+#introPage main #hiddenUserAccess .btn-submit {
+	width: 63%;
 }
 
 #introPage section.even .innerContainer {
@@ -101,21 +143,46 @@ footer p > a:visited {
 
 
 /* ==========================================================================
+  Border-Shadow
+   ========================================================================== */
+
+#introPage main #hiddenUserAccess {
+	-webkit-box-shadow: 0px 0px 7px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 0px 7px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 0px 7px rgba(50, 50, 50, 0.75);
+}
+
+/* ==========================================================================
+  Border Radius
+   ========================================================================== */
+
+#introPage main #hiddenUserAccess {
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+}
+
+
+/* ==========================================================================
   TEST
    ========================================================================== */
 
 /* Index-v2 */
-#introPage.v2 #main {
+#introPage #main {
 	background-position: 50% 40%;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
-#introPage.v2 #main h2,
-#introPage.v2 #main h3,
-#introPage.v2 #main p {
+#introPage #main h2,
+#introPage #main h3,
+#introPage #main p {
 	color: #fff;
 
+}
+
+#main {
+	background-image: url('../images/bg-image2.jpg');
 }
 
 

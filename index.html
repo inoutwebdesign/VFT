@@ -13,8 +13,8 @@
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/normalize.css">
-    <link rel="stylesheet" href="assets/css/global.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/global.css">
     <link rel="stylesheet" href="assets/css/media.css"> 
     
     <!-- JS -->
@@ -46,7 +46,7 @@
             var js, fjs = d.getElementsByTagName(s)[0];
             if (d.getElementById(id)) return;
             js = d.createElement(s); js.id = id;
-            js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=APP_ID";
+            js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=161033377314804";
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
     </script>
@@ -66,7 +66,7 @@
 
     </header>
 
-    <main>
+    <main id="main">
 
         <!-- Main Text -->
 
@@ -90,57 +90,93 @@
 
                 <!-- Register / Login button -->
 
-                <div class="introLogin">
+                <div class="userAccessBox clearfix">
                     <a href="" class="floatLeft" title="Register">
-                        <span>REGISTER</span>
+                        <span>register</span>
                     </a>
 
                     <img src="assets/images/icons/icon-login.png" width="70" height="70" alt="Login">
 
                     <a href="" class="floatRight" title="Login">
-                        <span>LOGIN</span>
+                        <span>login</span>
                     </a>
                 </div>
 
-                <section style="display:none">
+                <section id="hiddenUserAccess">
+
+                    <span class="close">[x]</span>
 
                     <!-- Register -->
-
-                    <h2>Facebook</h2>
-                    <p>Do you have a facebook account?</p>
-                    <div class="fb-login-button" data-show-faces="false" data-width="200" data-max-rows="1">Sign in with Facebook</div>
-                    
-                    <hr>
-                    
-                    <p>No facebook? You can still register for FREE.</p>
-                    <h2>Register</h2>
-                    <form action="#" method="GET">
-                    
-                        <input type="text" name="firstName" placeholder="First name">
-                        <input type="email" name="username" placeholder="Email">
-                        <input type="password" name="password" placeholder="Password">
-                        <button>Register</button>
+                    <div id="register" class="clearfix">
                         
-                        <p>Shortly you'll receiving an email to validate your account</p>
-                    </form>
+                        <h4>New to Virtual Fitness Trainer? No problem!<h4>
+                        <h5>You can register with or without a facebook account!</h5> 
 
-                    <!-- Login -->
+                        <div class="col_1_of_2">
+                                
+                            <div class="fb-login-button" data-show-faces="false" data-width="200" data-max-rows="1">Sign in with Facebook</div>
+                        </div>
 
-                    <form action="" method="POST">
+                        <div class="col_1_of_2"> 
+                            
+                            <form action="#" method="GET">
+                            
+                                <div class="groupVertical">
+                                    <input type="text" name="firstName" placeholder="First name">
+                                </div>
 
-                        <input type="email" name="username" placeholder="Username">
-                        <input type="password" name="password" placeholder="Password">
-                        <button>Login</button>
+                                <div class="groupVertical">
+                                    <input type="email" name="username" placeholder="Email">
+                                </div>
+
+                                <div class="groupVertical">
+                                    <input type="password" name="password" placeholder="Password">
+                                </div>
+
+                                <div class="groupVertical">
+                                    <button class="btn btn-submit" type="button">Register</button>
+                                </div>
+
+                            </form>
+                        </div>
+
+                    </div>
+
+                    <!-- Login --> 
+                    <div id="login" class="clearfix">
                         
-                        <a href="#" title="Forgot Password">Forgot password?</a>
-                    
-                    </form>
+                        <h4>Welcome back! How did you register the first time?</h4> 
 
+                        <div class="col_1_of_2">  
+                            <div class="fb-login-button" data-show-faces="false" data-width="200" data-max-rows="1">Sign in with Facebook</div>
+                        </div>
+
+                        <div class="col_1_of_2">
+                            
+                            <form action="" method="POST">
+                                
+                                <div class="groupVertical">    
+                                    <input type="email" name="username" placeholder="Username">
+                                </div>
+
+                                <div class="groupVertical">
+                                    <input type="password" name="password" placeholder="Password">
+                                </div>
+
+                                <div class="groupVertical">
+                                    <button class="btn btn-submit" type="button">Login</button>
+                                </div>
+
+                                <a href="#" title="Forgot Password">Forgot password?</a>
+                            </form>
+                        </div>
+
+                    </div>
+                    
                 </section>
 
             </div>
         </div>
-
     </main>
 
     <section class="odd">
@@ -152,7 +188,6 @@
 
                 <video controls="controls"  poster="assets/images/bg-image.jpg" width="640" height="360" title="promo-video">
                     <source src="assets/videos/promo/promo-video.m4v" type="video/mp4" />
-                    <source src="assets/videos/promo/promo-video.webm" type="video/webm" />
                     <source src="assets/videos/promo/promo-video.ogv" type="video/ogg" />
 
                     <img alt="promo-video" src="assets/images/XXXXX-Image that says it's not supported" width="640" height="360" title="Video playback is not supported by your browser" />
