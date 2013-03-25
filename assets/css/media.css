@@ -1,0 +1,82 @@
+/*! media.css
+
+/* ==========================================================================
+   Tablets and Mobiles optimization
+   ========================================================================== */
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+.gridContainer {
+	width: 90.675%;
+	padding-left: 1.1625%;
+	padding-right: 1.1625%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+}
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+h1, h2, h3, h4, h5, h6, p {
+	transition: font-size 2s ease-in-out 2s;
+	-moz-transition: font-size 2s ease-in-out 2s;
+	-webkit-transition: font-size 2s ease-in-out 2s;
+	-o-transition: font-size 2s ease-in-out 2s;
+}
+
+@media only screen and (max-width: 585px) {
+
+	h1 {font-size: 4em;}
+	h2, h3 {font-size: 1.5em;}		
+	p  {font-size: 85%;}
+
+}
+
+@media only screen and (max-width: 480px) {
+
+	h1 {font-size: 3em;}
+	h2, h3 {font-size: 1.1em;}		
+	p  {font-size: 65%;}
+}
+
+@media only screen and (max-width: 380px) {
+
+	h1 {font-size: 2em;}
+}
+
+
+
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	
+	/* 02 Columns */ 
+	.span_2_of_2, .span_1_of_2 {width: 100%;}
+	/* 03 Columns */ 
+	.span_3_of_3, .span_2_of_3,	.span_1_of_3 {width: 100%;}
+	/* 04 Columns */
+	.span_4_of_4, .span_3_of_4, .span_2_of_4, .span_1_of_4 {width: 100%;}	
+	/* 05 Columns */ 
+	.span_5_of_5, .span_4_of_5, .span_3_of_5, .span_2_of_5,	.span_1_of_5 {width: 100%;}
+	/* 06 Columns */
+	.span_6_of_6, .span_5_of_6, .span_4_of_6, .span_3_of_6, .span_2_of_6, .span_1_of_6 {width: 100%;}	
+	/* 07 Columns */ 
+	.span_7_of_7, .span_6_of_7,	.span_5_of_7, .span_4_of_7, .span_3_of_7, .span_2_of_7,	.span_1_of_7 {width: 100%;}
+	/* 08 Columns */
+	.span_8_of_8, .span_7_of_8, .span_6_of_8, .span_5_of_8, .span_4_of_8, .span_3_of_8, .span_2_of_8, .span_1_of_8 {width: 100%;}
+	/* 09 Columns */ 
+	.span_9_of_9, .span_8_of_9, .span_7_of_9, .span_6_of_9,	.span_5_of_9, .span_4_of_9, .span_3_of_9, .span_2_of_9,	.span_1_of_9 {width: 100%;}
+	/* 10 Columns */
+	.span_10_of_10, .span_9_of_10, .span_8_of_10, .span_7_of_10, .span_6_of_10,	.span_5_of_10, .span_4_of_10, .span_3_of_10, .span_2_of_10,	.span_1_of_10 {width: 100%;}
+	/* 11 Columns */ 
+	.span_11_of_11, .span_10_of_11, .span_9_of_11, .span_8_of_11, .span_7_of_11, .span_6_of_11,	.span_5_of_11, .span_4_of_11, .span_3_of_11, .span_2_of_11,	.span_1_of_11 {width: 100%;}
+	/* 12 Columns */
+	.span_12_of_12, .span_11_of_12, .span_10_of_12, .span_9_of_12, .span_8_of_12, .span_7_of_12, .span_6_of_12,	.span_5_of_12, .span_4_of_12, .span_3_of_12, .span_2_of_12,	.span_1_of_12 {width: 100%;}
+}
