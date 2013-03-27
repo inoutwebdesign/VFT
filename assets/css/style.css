@@ -172,40 +172,61 @@ select {
 #registration nav .steps.three.green {background-position: -440px -302px;}
 #registration nav .steps.four.green  {background-position: -660px -302px;}
 
-/* Stage 1
+/* Stage 1 (global)
 ======================*/
-#registration main header .col_1_of_2,
-#registration main header img {
+#registration.stage1 main header .col_1_of_2,
+#registration.stage1 main header img {
 	float: left;
 }
 
-#registration main header .col_1_of_5 {
+#registration.stage1 main header .col_1_of_5 {
 	float: right;
 }
 
-#registration main header img {
+#registration.stage1 main header img {
 	margin-right: 5%;
 }
 
-#registration main .innerContainer {
+#registration.stage1 main .innerContainer {
 	border: 1px solid #DDDDDD;
     padding: 2%;
 }
 
-#registration section form > .col_2_of_2 {
+#registration.stage1 section form > .col_2_of_2 {
 	padding: 2% 0 1%;
 }
 
-#registration section form label {
+#registration.stage1 section form label {
 	display: inline-block;
     width: 65%;
     margin-left: 2%;
 }
 
-#registration section form .btn-next {
+#registration.stage1 section form .btn-next {
 	margin-top: 2%;
 	float: right;
 }
+
+
+
+/* Stage 1 - Manual registration (no facebook)
+===============================================*/
+
+#registration.stage1.no-facebook main header .col_1_of_3 {
+	float: right;
+}
+
+#registration.stage1.no-facebook main header p:first-child select {
+	width: 30%;
+}
+
+#registration.stage1.no-facebook .btn-upload {
+	width: 26%;
+	color: #fff;
+}
+
+
+
 
 
 /* ==========================================================================
@@ -232,7 +253,8 @@ footer p > a:visited {
   Box-Shadow
    ========================================================================== */
 
-#introPage main #hiddenUserAccess {
+#introPage main #hiddenUserAccess,
+#registration form span.tooltip {
 	-webkit-box-shadow: 0px 0px 7px rgba(50, 50, 50, 0.75);
 	-moz-box-shadow:    0px 0px 7px rgba(50, 50, 50, 0.75);
 	box-shadow:         0px 0px 7px rgba(50, 50, 50, 0.75);
@@ -250,7 +272,8 @@ footer p > a:visited {
    ========================================================================== */
 
 #introPage main #hiddenUserAccess,
-#registration main .innerContainer {
+#registration main .innerContainer,
+#registration form span.tooltip {
 	-webkit-border-radius: 7px;
 	-moz-border-radius: 7px;
 	border-radius: 7px;
@@ -264,4 +287,14 @@ footer p > a:visited {
 #registration form span {
 	display:none;
 }
+
+#registration form span.tooltip {
+	background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    /*display: block;*/
+    height: 200px;
+    max-width: 250px;
+    padding: 1%;
+}
+
 

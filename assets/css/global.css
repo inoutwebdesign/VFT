@@ -291,6 +291,16 @@ select {
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#48B30D', GradientType=0);
 }
 
+.btn-upload {	
+	*background-color: #e50000;
+	background-image: -moz-linear-gradient(top, #ffffff, #e50000);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e50000));
+	background-image: -webkit-linear-gradient(top, #ffffff, #e50000);
+	background-image: -o-linear-gradient(top, #ffffff, #e50000);
+	background-image: linear-gradient(to bottom, #ffffff, #e50000);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#e50000', GradientType=0);
+}
+
 
 /* ==========================================================================
    Responsive Design

@@ -7,7 +7,7 @@
     <!-- ViewPort for Mobiles and Tables -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi" />
 
-    <title>VPT - Stage 1 - Personal Info</title>
+    <title>VPT - Stage 1 - Personal Info - New Account</title>
     <meta name="description" content="">
     
     <!-- CSS -->
@@ -38,7 +38,7 @@
     <![endif]-->
        
 </head>
-<body id="registration" class="stage1">
+<body id="registration" class="stage1 no-facebook">
     <header>
        
         <div class="innerContainer">
@@ -84,24 +84,49 @@
         <div class="innerContainer">
             
             <header class="clearfix">
+                
                 <div class="col_1_of_2">
                     <img src="assets/images/avatar.jpg" width="130" height="150" alt="Facebook Avatar">
                     <h3>Matt</h3>
                     <h3>Baratella</h3>
                     <p>Email: test@test.com</p>
+                    <button class="btn btn-upload" type="button">Upload</button>
                 </div>
 
-                <div class="col_1_of_5">
-                    <p><strong>Gender</strong> : Male</p>
-                    <p><strong>DOB</strong> : 27/02/1973</p>
-                    <p><strong>Age</strong> : 23yrs old</p>
+                <div class="col_1_of_3">
+                    <p><strong>Gender</strong> :
+                        <select>
+                            <option>Male</option>
+                            <option>Female</option>
+                        </select>
+                    </p>
+                    <p><strong>DOB</strong> : 
+                        <select>
+                            <option>01</option>
+                            <option>02</option>
+                            <option>03</option>
+                        </select>
+                        <select>
+                            <option>Jan</option>
+                            <option>Feb</option>
+                            <option>Mar</option>
+                        </select>
+                        <select>
+                            <option>1980</option>
+                            <option>1981</option>
+                            <option>1982</option>
+                        </select>
+                    </p>
+                    <p><strong>Age</strong> : 
+                        <!-- script to identify the age (thise year - select year dob)-->
+                    </p>
                 </div>
             </header>
 
             <section class="clearfix">
                 <p> 
-                    In order to have the best result, training type and 
-                    nutritional advise, please enter the following information:
+                    In order to have the best result, training type and nutritional advise, 
+                    please complete all the missing information.
                 </p>
 
                 <form action="" method="">
@@ -130,7 +155,7 @@
                             <option>50cm</option>
                             <option>60cm</option>
                         </select>
-                        <span>[i]</span>
+                        <span class="tooltip">[i]</span>
                     </div>
 
                     <div class="col_2_of_2 even">
@@ -140,7 +165,7 @@
                             <option>50cm</option>
                             <option>60cm</option>
                         </select>
-                        <span>[i] Tooltip: if you don't know how to measure, please check HOW TO from our website ></span>
+                        <span class="tooltip">[i] Tooltip: if you don't know how to measure, please check HOW TO from our website ></span>
                     </div>
 
                     <div class="col_2_of_2 odd">
@@ -150,7 +175,7 @@
                             <option>50cm</option>
                             <option>60cm</option>
                         </select>
-                        <span>[i]</span>
+                        <span class="tooltip">[i]</span>
                     </div>
 
                     <div class="col_2_of_2 even">
@@ -160,7 +185,7 @@
                             <option>50cm</option>
                             <option>60cm</option>
                         </select>
-                        <span>[i]</span>
+                        <span class="tooltip">[i]</span>
                     </div>
 
                     <div class="col_2_of_2 odd">
@@ -170,7 +195,7 @@
                             <option>50cm</option>
                             <option>60cm</option>
                         </select>
-                        <span>[i]</span>
+                        <span class="tooltip">[i]</span>
                     </div>
 
                     <div class="col_2_of_2 even">
@@ -180,7 +205,7 @@
                             <option>50cm</option>
                             <option>60cm</option>
                         </select>
-                        <span>[i]</span>
+                        <span class="tooltip">[i]</span>
                     </div>
 
                     <div class="col_2_of_2 odd">
@@ -190,7 +215,7 @@
                             <option>50cm</option>
                             <option>60cm</option>
                         </select>
-                        <span>[i]</span>
+                        <span class="tooltip">[i]</span>
                     </div>
 
                     <div class="col_2_of_2 even">
@@ -200,7 +225,7 @@
                             <option>Between 110 and 140</option>
                             <option>Over 140</option>
                         </select>
-                        <span>Please consult your GP, local gym health instructor or anyone who has the facility - link</span>
+                        <span class="tooltip">Please consult your GP, local gym health instructor or anyone who has the facility - link</span>
                     </div>
 
                     <div class="col_2_of_2 odd">
@@ -210,7 +235,7 @@
                             <option>Between 110 and 140</option>
                             <option>Over 140</option>
                         </select>
-                        <span>Please consult your GP, local gym health instructor or anyone who has the facility - link</span>
+                        <span class="tooltip">Please consult your GP, local gym health instructor or anyone who has the facility - link</span>
                     </div>
 
                     <button class="btn btn-next">Go to stage 2 - Questionnarie</button>
@@ -225,7 +250,7 @@
     <footer class="odd">
 
         <div class="innerContainer clearfix">
-            <div class="col_1_of_6 floatLeft"><p><a href="" title="Terms &amp; Conditions">T&C</a></p></div>
+            <div class="col_1_of_6 floatLeft"><p><a href="" title="Terms &amp; Conditions">T&amp;C</a></p></div>
             <div class="col_1_of_6 floatLeft"><p><a href="" title="Policy">Policy</a></p></div>
             <div class="col_1_of_6 floatLeft"><p><a href="" title="Contact">Contact</a></p></div>
             <div class="col_1_of_2 floatRight"><p>&copy; 2013 Health & Fitness Ltd</p></div>
