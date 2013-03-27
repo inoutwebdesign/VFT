@@ -39,6 +39,13 @@ video img {
 	cursor: pointer;
 }
 
+header .col_2_of_2 {
+	text-align:	center;
+}
+
+select {
+	width: 25%;
+}
 
 /* ==========================================================================
    INTRO Page
@@ -50,8 +57,19 @@ video img {
 	height: auto; /* responsive design for hardcoded images */
 }
 
+#introPage .innerContainer {
+	text-align: center;
+}
+
 #introPage main {
 	border-bottom: 1px solid #ddd;
+	background: url('../images/bg-image2.jpg') no-repeat 50% 40% / cover transparent;
+}
+
+#introPage main h2,
+#introPage main h3,
+#introPage main p {
+	color: #fff;
 }
 
 #introPage main .userAccessBox {
@@ -96,11 +114,6 @@ video img {
 	margin-top: 1em;
 }
 
-#introPage main #hiddenUserAccess #register,
-#introPage main #hiddenUserAccess #login {
-	text-align: center;
-}
-
 #introPage main #hiddenUserAccess #register h4 {
 	margin: 0.3em 0;
 }
@@ -114,13 +127,86 @@ video img {
 	width: 63%;
 }
 
-#introPage section.even .innerContainer {
-	text-align: center;
-}
-
 #introPage section.even h3 {
 	margin-bottom: 1%;
 }
+
+/* ==========================================================================
+   Registration
+   ========================================================================== */
+
+#registration {}
+
+#registration nav {
+	padding: 1% 0;
+}
+
+#registration nav .innerContainer {
+	text-align: center;
+}
+
+#registration nav .col_1_of_4 {
+	float: left;
+	padding: 0 0.6%;
+}
+
+#registration nav .steps {
+	background: url('../images/icons/icons-steps-registration.png') no-repeat;
+	width: 220px;
+	height: 150px;
+	display: block;
+}
+
+#registration nav .steps.one   {background-position: 0 0;}
+#registration nav .steps.two   {background-position: -220px 0;}
+#registration nav .steps.three {background-position: -440px 0;}
+#registration nav .steps.four  {background-position: -660px 0;}
+
+#registration nav .steps.one.orange   {background-position: 0 -151px;}
+#registration nav .steps.two.orange   {background-position: -220px -151px;}
+#registration nav .steps.three.orange {background-position: -440px -151px;}
+#registration nav .steps.four.orange  {background-position: -660px -151px;}
+
+#registration nav .steps.one.green   {background-position: 0 -302px;}
+#registration nav .steps.two.green   {background-position: -220px -302px;}
+#registration nav .steps.three.green {background-position: -440px -302px;}
+#registration nav .steps.four.green  {background-position: -660px -302px;}
+
+/* Stage 1
+======================*/
+#registration main header .col_1_of_2,
+#registration main header img {
+	float: left;
+}
+
+#registration main header .col_1_of_5 {
+	float: right;
+}
+
+#registration main header img {
+	margin-right: 5%;
+}
+
+#registration main .innerContainer {
+	border: 1px solid #DDDDDD;
+    padding: 2%;
+}
+
+#registration section form > .col_2_of_2 {
+	padding: 2% 0 1%;
+}
+
+#registration section form label {
+	display: inline-block;
+    width: 65%;
+    margin-left: 2%;
+}
+
+#registration section form .btn-next {
+	margin-top: 2%;
+	float: right;
+}
+
 
 /* ==========================================================================
    Footer
@@ -143,7 +229,7 @@ footer p > a:visited {
 
 
 /* ==========================================================================
-  Border-Shadow
+  Box-Shadow
    ========================================================================== */
 
 #introPage main #hiddenUserAccess {
@@ -152,11 +238,19 @@ footer p > a:visited {
 	box-shadow:         0px 0px 7px rgba(50, 50, 50, 0.75);
 }
 
+#registration main .innerContainer {
+	-webkit-box-shadow: 0px 0px 22px rgba(72, 179, 13, 0.5); /* Equivalent color #48B30D used for main Intro text */
+	-moz-box-shadow:    0px 0px 22px rgba(72, 179, 13, 0.5);
+	box-shadow:         0px 0px 22px rgba(72, 179, 13, 0.5);
+}
+
+
 /* ==========================================================================
   Border Radius
    ========================================================================== */
 
-#introPage main #hiddenUserAccess {
+#introPage main #hiddenUserAccess,
+#registration main .innerContainer {
 	-webkit-border-radius: 7px;
 	-moz-border-radius: 7px;
 	border-radius: 7px;
@@ -167,22 +261,7 @@ footer p > a:visited {
   TEST
    ========================================================================== */
 
-/* Index-v2 */
-#introPage #main {
-	background-position: 50% 40%;
-	background-repeat: no-repeat;
-	background-size: cover;
+#registration form span {
+	display:none;
 }
-
-#introPage #main h2,
-#introPage #main h3,
-#introPage #main p {
-	color: #fff;
-
-}
-
-#main {
-	background-image: url('../images/bg-image2.jpg');
-}
-
 
