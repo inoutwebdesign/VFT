@@ -63,7 +63,10 @@ select {
 
 #introPage main {
 	border-bottom: 1px solid #ddd;
-	background: url('../images/bg-image2.jpg') no-repeat 50% 40% / cover transparent;
+	background-image: url('../images/bg-image2.jpg');
+	background-position: 50% 40%;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 #introPage main h2,
@@ -207,8 +210,6 @@ select {
 	float: right;
 }
 
-
-
 /* Stage 1 - Manual registration (no facebook)
 ===============================================*/
 
@@ -225,8 +226,50 @@ select {
 	color: #fff;
 }
 
+/* Stage 2 - Questionnarie
+===============================================*/
 
+#registration.stage2 {}
 
+#registration.stage2 header {
+	border-bottom: 1px solid #EEEEEE;
+    margin: 0 auto 10px;
+    padding: 0 0 20px;
+    width: 760px;
+}
+
+#registration.stage2 header p {
+	font-size: 80% !important;
+	margin: 0 !important;
+}
+
+#registration.stage2 article h3 {
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+#registration.stage2 .btn-asnwers {
+	padding-right: 50px;
+	padding-left: 50px;
+	position: relative;
+}
+
+#registration.stage2 .btn-asnwers.yes {
+	left: 23%;
+}
+
+#registration.stage2 .btn-asnwers.no {
+	left: 49%;
+}
+
+#registration.stage2 .questionPagination {
+	font-size: 70%;
+    font-weight: 600;
+    margin: 0 auto;
+    padding: 50px 0 0;
+    text-align: center;
+    width: 300px;
+}
 
 
 /* ==========================================================================

@@ -10,7 +10,7 @@
 
 body {
 	/*font: normal 0.7em/1.3em Verdana, Geneva, sans-serif;*/
-	font: 100%/1.4em 'Trebuchet MS', verdana, arial, helvetica, sans-serif;
+	font: 100%/1.4em 'Raleway', 'Trebuchet MS', verdana, arial, helvetica, sans-serif;
 	color: #131313;
 }
 
@@ -23,17 +23,18 @@ footer {
    Typography
    ========================================================================== */
 
-h1, h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6 {
 	margin: 0;
 	padding: 0;
-	font-family: 'Bevan', cursive;
-	font-weight: normal;
+	font-family: 'Raleway', sans-serif;
 }
 
 h1 {
 	font-size: 6.5em;
 	line-height: 1em;
 	color: #48b30d;
+	font-family: 'Bevan', cursive;
+	font-weight: normal;
 
 	/* Stroke FX */
 	text-shadow: 
@@ -46,38 +47,43 @@ h1 {
 h2 {
 	font-size: 2.5em;
 	line-height: 1.4em;
+	font-weight: 200;
 }
 
 h3 {
 	font-size: 2em;
 	line-height: 1.5em;
+	font-weight: 200;
 }
 
 h4 {
 	font-size: 1.5em;
 	line-height: 1.5em;
+	font-weight: 600;
 }
 
 h5 {
 	font-size: 1em;
 	line-height: 1.5em;
+	font-weight: 600;
 }
 
 h6 {
 	font-size: 1em;
 	line-height: 40px;
 	color: #000;
+	font-weight: 600;
 }
 
 p {
-	font-family: 'Libre Baskerville', sans-serif;
+	/*font-family: 'Libre Baskerville', sans-serif;*/
 	line-height: 2em;
 	margin: 4% 0;
 }
 
 label {
-	font-family: 'Libre Baskerville', sans-serif;
-	font-weight: bold;
+	/*font-family: 'Libre Baskerville', sans-serif;*/
+	font-weight: 600;
 }
 
 /* ==========================================================================
@@ -310,8 +316,9 @@ img, object, embed, video {max-width: 100%;}
 
 .innerContainer {
 	width: 100%;
-	max-width: 960px;
+	max-width: 940px;
 	margin: 0 auto;
+	padding: 10px;
 }
 
 /* 2 Grid */
