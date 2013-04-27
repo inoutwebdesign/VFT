@@ -75,6 +75,11 @@ select {
 	color: #fff;
 }
 
+#introPage main h2,
+#introPage main h3 {
+	font-weight: 900;
+}
+
 #introPage main .userAccessBox {
 	margin: 0 auto;
 	width: 30%;
