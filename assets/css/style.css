@@ -276,6 +276,105 @@ select {
     width: 300px;
 }
 
+/* Stage 3 - Summary
+===============================================*/
+
+#registration.stage3 {}
+
+#registration.stage3 main header {
+	border-bottom: 1px solid #eee;
+}
+
+#registration.stage3 main .col_1_of_2,
+#registration.stage3 main header img {
+	float: left;
+}
+
+#registration.stage3 main header select {
+	width: 85px;
+}
+
+#registration.stage3 main header img {
+	margin-right: 5%;
+}
+
+#registration.stage3 main .innerContainer {
+	border: 1px solid #DDDDDD;
+    padding: 2%;
+}
+
+#registration.stage3 section form > .col_2_of_2 {
+	padding: 2% 0 1%;
+}
+
+#registration.stage3 section form label {
+	display: inline-block;
+    width: 65%;
+    margin-left: 2%;
+}
+
+#registration.stage3 section form .btn-next {
+	margin-top: 2%;
+	float: right;
+}
+
+/* Goals */
+
+#registration.stage3 section {
+	border-bottom: 1px solid #eee;
+	padding-bottom: 30px;
+}
+
+#registration.stage3 section h4 {
+	text-align: center;
+	margin: 20px 0;
+	color: #48B30D;
+}
+
+#registration.stage3 section input[type=checkbox],
+#registration.stage3 main div.innerContainer > input {
+	position: relative; 
+	top: -5px;
+}
+
+#registration.stage3 section input[type=checkbox] {
+	width: 33px;
+}
+
+#registration.stage3 section.goals .col_1_of_2 {
+	margin-bottom: 5px;
+    min-height: 90px;
+}
+
+#registration.stage3 main div.innerContainer > p {
+	margin-bottom: 0 !important
+}
+
+#registration.stage3 button {
+	float: right;
+	position: relative;
+	top: -10px;
+}
+
+/* Stage 4 - Complete
+===============================================*/
+
+#registration.stage4 {}
+
+#registration.stage4 article > img {
+	float: left;
+    position: relative;
+    top: 30px;
+    width: 50%;
+}
+
+#registration.stage4 article p {
+	margin: 0 !important;
+}
+
+#registration.stage4 article button {
+	float: right;
+}
 
 /* ==========================================================================
    Footer
