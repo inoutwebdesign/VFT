@@ -213,10 +213,13 @@ header nav ul li:hover {
 #registration nav .steps.three.green {background-position: -440px -302px;}
 #registration nav .steps.four.green  {background-position: -660px -302px;}
 
-/* Stage 1 (global)
+/* Stage 1 (global - fitnessPLan)
 ======================*/
 #registration.stage1 main header .col_1_of_2,
-#registration.stage1 main header img {
+#registration.stage1 main header img,
+#fitnessPlan main header .col_1_of_2,
+#fitnessPlan main header .col_1_of_5,
+#fitnessPlan main header img {
 	float: left;
 }
 
@@ -224,11 +227,13 @@ header nav ul li:hover {
 	float: right;
 }
 
-#registration.stage1 main header img {
+#registration.stage1 main header img,
+#fitnessPlan main header img {
 	margin-right: 5%;
 }
 
-#registration.stage1 main .innerContainer {
+#registration.stage1 main .innerContainer,
+#fitnessPlan main .innerContainer {
 	border: 1px solid #DDDDDD;
     padding: 2%;
 }
@@ -420,7 +425,59 @@ header nav ul li:hover {
 
 #fitnessPlan {}
 
-#fitnessPlan {}
+/* some alignment for FitnessPlan page has been done under #registration stage1 global */
+
+#fitnessPlan main .innerContainer > header {
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #ddd;
+} 
+
+#fitnessPlan main header .col_1_of_7 {
+	float: right;
+}
+
+#fitnessPlan #trainingSections header ul li {
+	display: inline-block;
+	*zoom: 1;
+	padding: 30px 98px;
+	border: 1px solid #aaa;
+}
+
+#fitnessPlan #trainingSections header ul li:hover {
+	background-color: #ddd;
+	cursor: pointer;
+}
+
+#fitnessPlan #trainingSections section > .col_1_of_2 {
+	float: left;
+}
+
+/* Custom Plan
+-------------------------------- */
+#fitnessPlan section.customPlan form {
+	margin-top: 40px;
+}
+
+#fitnessPlan section.customPlan label {
+	float: left;
+	position: relative;
+	top: 11px;
+}
+
+#fitnessPlan section.customPlan input,
+#fitnessPlan section.customPlan select {
+	float: right;
+}
+
+#fitnessPlan section.customPlan select {
+	width: 63%;
+}
+
+#fitnessPlan section.customPlan button {
+	float: right;
+	margin-top: 15px;
+}
 
 /* ==========================================================================
    Footer

@@ -16,7 +16,8 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/global.css">
     <link rel="stylesheet" href="assets/css/media.css"> 
-    
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+
     <!-- JS -->
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     
@@ -57,11 +58,11 @@
 
                 <nav>
                     <ul>
-                        <li class="item active">Fitness Plan</li>
-                        <li class="item">Nutrition Plan</li>
-                        <li class="item">Media</li>
-                        <li class="item">Products</li>
-                        <li class="item">Account</li>
+                        <li class="item active"><a href="2-fitnessplan.html">Fitness Plan</a></li>
+                        <li class="item"><a href="3-nutritionalplan.html">Nutrition Plan</a></li>
+                        <li class="item"><a href="4-media.html">Media</a></li>
+                        <li class="item"><a href="5-products.html">Products</a></li>
+                        <li class="item"><a href="6-account.html">Account</a></li>
                         <li class="item">facebook avatar</li>
                     </ul>
                 </nav>
@@ -71,31 +72,6 @@
 
     </header>
 
-    <nav class="clearfix">
-        <!-- Progress Registration - Stage 1 -->
-        <div class="innerContainer">
-            <div class="col_1_of_4">
-                <span class="steps one orange"></span>
-                <p>Body Info</p>
-            </div>
-
-            <div class="col_1_of_4">
-                <span class="steps two"></span>
-                <p>Questionnarie</p>
-            </div>
-
-            <div class="col_1_of_4">
-                <span class="steps three"></span>
-                <p>Summary</p>
-            </div>
-
-            <div class="col_1_of_4">
-                <span class="steps four"></span>
-                <p>Complete</p>
-            </div>
-        </div>
-    </nav>
-
     <main>
         <!-- Main -->
         <div class="innerContainer">
@@ -104,140 +80,109 @@
                 <div class="col_1_of_2">
                     <img src="assets/images/avatar.jpg" width="130" height="150" alt="Facebook Avatar">
                     <h3>Matt</h3>
-                    <h3>Baratella</h3>
-                    <p>Email: test@test.com</p>
+                    <p>Actual Weight : <span>80 kgs<span></p>
+                    <p>Body Type : <span>Athletic</span></p>
+                    <button type="button" class="btn btn-upload">View Profile</button>
                 </div>
 
                 <div class="col_1_of_5">
-                    <p><strong>Gender</strong> : Male</p>
-                    <p><strong>DOB</strong> : 27/02/1973</p>
-                    <p><strong>Age</strong> : 23yrs old</p>
+                    <p><strong>Training Level : </strong> * * * * *</p>
+                    <p><strong>Fitness Level : </strong>  * * * * *</p>
+                    <p><strong>Nutritional level : </strong>  * * * * *</p>
+                </div>
+
+                <div class="col_1_of_7">
+                    <button type="button" class="btn btn-upload">Re-calculate Training</button>
                 </div>
             </header>
 
-            <section class="clearfix">
-                <p> 
-                    In order to have the best result, training type and 
-                    nutritional advise, please enter the following information:
-                </p>
+            <!-- Training Section -->
+            <div id="trainingSections">
+                <header>
+                    <ul>
+                        <li>Custom Plan</li>
+                        <li>New Automatic Plan</li>
+                        <li>Existing Plan</li>
+                    </ul>
+                </header>
 
-                <form action="" method="">
-                    <div class="col_2_of_2 odd">
-                        <label> *What's your current height :</label>
-                        <select>
-                            <option>5.1"</option>
-                            <option>5.2"</option>
-                            <option>5.3"</option>
-                        </select>
+                <!-- Custom Plan -->
+                <section class="customPlan clearfix">
+                    <div class="col_1_of_2">
+                        <img src="assets/images/fitnessplan/human-body.jpg" alt="">
                     </div>
+                    <div class="col_1_of_2">
+                        <form method="#" action="#">
+                            <span class="col_1_of_2 clearfix">
+                                <label for="Plan title">Plan title</label>
+                                <input type="text" value="">
+                            </span>
 
-                    <div class="col_2_of_2 even">
-                        <label> *What's your current weight :</label>
-                        <select>
-                            <option>150 pounds</option>
-                            <option>160 pounds</option>
-                            <option>170 pounds</option>
-                        </select>
+                            <span class="col_1_of_2 clearfix">
+                                <label for="Start date">Start Date : </label>
+                                <input type="date" name="startDate"> 
+                            </span>
+
+                            <span class="col_1_of_2 clearfix">
+                                <label for="End date">End Date : </label>
+                                <input type="date" name="endDate"> 
+                            </span>
+
+                            <span class="col_1_of_2 clearfix">
+                                <label for="Cardio">Cardio : </label>
+                                <select>
+                                    <option>Cardio1</option>
+                                    <option>Cardio2</option>
+                                    <option>Cardio3</option>
+                                </select> 
+                            </span>
+
+                            <span class="col_1_of_2 clearfix">
+                                <label for="Upper Body">Upper Body : </label>
+                                <select>
+                                    <option>Upper Body 1</option>
+                                    <option>Upper Body 2</option>
+                                    <option>Upper Body 3</option>
+                                </select>
+                            </span>
+
+                            <span class="col_1_of_2 clearfix">
+                                <label for="Lower Body">Lower Body : </label>
+                                <select>
+                                    <option>Lower Body 1</option>
+                                    <option>Lower Body 2</option>
+                                    <option>Lower Body 3</option>
+                                </select>
+                            </span>
+
+                            <span class="col_1_of_2 clearfix">
+                                <label for="Abs">Abs : </label>
+                                <select>
+                                    <option>Abs 1</option>
+                                    <option>Abs 2</option>
+                                    <option>Abs 3</option>
+                                </select>
+                            </span>
+
+                            <button class="btn">Create Plan</button>
+                        </form>
+
                     </div>
+                    
 
-                    <div class="col_2_of_2 odd">
-                        <label> *Waist (hips)</label>
-                        <select>
-                            <option>40cm</option>
-                            <option>50cm</option>
-                            <option>60cm</option>
-                        </select>
-                        <span class="tooltip">[i]</span>
-                    </div>
+                </section>
 
-                    <div class="col_2_of_2 even">
-                        <label> *Abdomen (belly button)</label>
-                        <select>
-                            <option>40cm</option>
-                            <option>50cm</option>
-                            <option>60cm</option>
-                        </select>
-                         <span class="tooltip">[i] Tooltip: if you don't know how to measure, please check HOW TO from our website ></span>
-                    </div>
+                <!-- New Auto Plan -->
+                <section class="autoPlan clearfix"></section>
 
-                    <div class="col_2_of_2 odd">
-                        <label> *Chest</label>
-                        <select>
-                            <option>40cm</option>
-                            <option>50cm</option>
-                            <option>60cm</option>
-                        </select>
-                        <span class="tooltip">[i]</span>
-                    </div>
+                <!-- Existing Plan -->
+                <section class="existingPlan clearfix"></section>
 
-                    <div class="col_2_of_2 even">
-                        <label> *Thighs</label>
-                        <select>
-                            <option>40cm</option>
-                            <option>50cm</option>
-                            <option>60cm</option>
-                        </select>
-                        <span class="tooltip">[i]</span>
-                    </div>
+            </div><!-- //end Training Section -->
 
-                    <div class="col_2_of_2 odd">
-                        <label> *Arms</label>
-                        <select>
-                            <option>40cm</option>
-                            <option>50cm</option>
-                            <option>60cm</option>
-                        </select>
-                        <span class="tooltip">[i]</span>
-                    </div>
-
-                    <div class="col_2_of_2 even">
-                        <label> Body Fat %</label>
-                        <select>
-                            <option>40cm</option>
-                            <option>50cm</option>
-                            <option>60cm</option>
-                        </select>
-                        <span class="tooltip">[i]</span>
-                    </div>
-
-                    <div class="col_2_of_2 odd">
-                        <label> Body Fat %</label>
-                        <select>
-                            <option>40cm</option>
-                            <option>50cm</option>
-                            <option>60cm</option>
-                        </select>
-                        <span class="tooltip">[i]</span>
-                    </div>
-
-                    <div class="col_2_of_2 even">
-                        <label> What's your blood pressure :</label>
-                        <select>
-                            <option>Lower than 110</option>
-                            <option>Between 110 and 140</option>
-                            <option>Over 140</option>
-                        </select>
-                        <span class="tooltip">Please consult your GP, local gym health instructor or anyone who has the facility - link</span>
-                    </div>
-
-                    <div class="col_2_of_2 odd">
-                        <label> What's your insuline level :</label>
-                        <select>
-                            <option>Lower than 110</option>
-                            <option>Between 110 and 140</option>
-                            <option>Over 140</option>
-                        </select>
-                        <span class="tooltip">Please consult your GP, local gym health instructor or anyone who has the facility - link</span>
-                    </div>
-
-                    <button class="btn btn-next">Go to stage 2 - Questionnarie</button>
-                </form>
-            </section>
         </div>
 
     </main>
-
-    <section></section>
 
     <footer class="odd">
 
