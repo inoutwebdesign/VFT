@@ -236,14 +236,14 @@ select {
 
 #registration.stage2 {}
 
-#registration.stage2 header {
+#registration.stage2 main header {
 	border-bottom: 1px solid #EEEEEE;
     margin: 0 auto 10px;
     padding: 0 0 20px;
     width: 760px;
 }
 
-#registration.stage2 header p {
+#registration.stage2 main header p {
 	font-size: 80% !important;
 	margin: 0 !important;
 }
@@ -311,6 +311,7 @@ select {
 	display: inline-block;
     width: 65%;
     margin-left: 2%;
+    vertical-align: top;
 }
 
 #registration.stage3 section form .btn-next {
