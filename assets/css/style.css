@@ -652,15 +652,19 @@ section .nav-tabs ul li.active a {
 	border:	1px solid #ddd;
 }
 
-#media main #videos {
+#media main #videos,
+ #media main #paperTraining {
 	margin-top: 30px;
 }
 
-#media main #videos > ul > li {
+#media main #videos > ul > li,
+#media main #paperTraining > ul > li {
 	padding: 10px;
 	border: 1px solid #ddd;
 	margin-bottom: 30px;
 }
+
+
 
 /* ==========================================================================
    Footer
