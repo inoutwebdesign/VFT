@@ -453,30 +453,213 @@ header nav ul li:hover {
 	float: left;
 }
 
-/* Custom Plan
--------------------------------- */
-#fitnessPlan section.customPlan form {
+/* Custom Plan - Auto Plan
+---------------------------------------------------------------- */
+#fitnessPlan section.customPlan form,
+#fitnessPlan section.autoPlan form {
 	margin-top: 40px;
 }
 
-#fitnessPlan section.customPlan label {
+#fitnessPlan section.customPlan label,
+#fitnessPlan section.autoPlan label {
 	float: left;
 	position: relative;
 	top: 11px;
 }
 
 #fitnessPlan section.customPlan input,
-#fitnessPlan section.customPlan select {
+#fitnessPlan section.customPlan select,
+#fitnessPlan section.autoPlan input,
+#fitnessPlan section.autoPlan select {
 	float: right;
 }
 
-#fitnessPlan section.customPlan select {
+#fitnessPlan section.customPlan select,
+#fitnessPlan section.autoPlan select {
 	width: 63%;
 }
 
 #fitnessPlan section.customPlan button {
 	float: right;
 	margin-top: 15px;
+}
+
+#fitnessPlan section.autoPlan > div > form > span {
+	float: left;
+	
+}
+
+#fitnessPlan section.autoPlan > div > form > span:first-child {
+	margin-right: 13px;
+}
+
+#fitnessPlan section.autoPlan button {
+	float: right;
+}
+
+/* Grid Table */
+section.autoPlan .nav-tabs {
+	margin-top: 50px;
+}
+
+section .nav-tabs ul li.tab {
+	display: inline-block;
+	*zoom: 1;
+	border-top: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+
+	-webkit-border-top-right-radius: 7px;
+	 -webkit-border-top-left-radius: 7px;
+	 	-moz-border-radius-topright: 7px;
+		 -moz-border-radius-topleft: 7px;
+			border-top-right-radius: 7px;
+			 border-top-left-radius: 7px;
+
+	padding: 15px 50px;
+}
+
+section .nav-tabs ul li.active {
+	background-color: #eee;
+	position: relative;
+	top: 1px;
+}
+
+section .nav-tabs ul li.active a {
+	color: #FF7F01;
+}
+
+#fitnessPlan section table {
+	border: 1px solid #ddd;
+	padding: 15px;
+}
+
+#fitnessPlan section table thead,
+#fitnessPlan section table tbody,
+#fitnessPlan section table th,
+#fitnessPlan section table tr,
+#fitnessPlan section table td {
+	border: 1px solid #ddd;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#fitnessPlan section.autoPlan table thead,
+#fitnessPlan section.autoPlan table tbody,
+#fitnessPlan section.autoPlan table th,
+#fitnessPlan section.autoPlan table tr,
+#fitnessPlan section.autoPlan table td {
+	padding: 15px 25px;
+}
+
+#fitnessPlan section.existingPlan table thead,
+#fitnessPlan section.existingPlan table tbody,
+#fitnessPlan section.existingPlan table th,
+#fitnessPlan section.existingPlan table tr,
+#fitnessPlan section.existingPlan table td {
+	padding: 15px 22px;
+}
+
+
+#fitnessPlan section table thead {
+	background-color: #eee;
+}
+
+/* ==========================================================================
+   NUTRITIONAL PLAN
+   ========================================================================== */
+
+#nutritionalPlan {}
+
+#nutritionalPlan main header {
+	border-bottom: 1px solid #ddd;
+}
+
+#nutritionalPlan main header .col_1_of_4 {
+	float: left;
+	margin: 20px 5px;
+}
+
+#nutritionalPlan main header .col_1_of_4 button {
+	width: 200px;
+	height: 150px;
+}
+
+#nutritionalPlan main table {
+	padding: 15px;
+}
+
+#nutritionalPlan section table,
+#nutritionalPlan section table thead,
+#nutritionalPlan section table tbody,
+#nutritionalPlan section table th,
+#nutritionalPlan section table tr,
+#nutritionalPlan section table td {
+	border: 1px solid #ddd;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#nutritionalPlan section table thead,
+#nutritionalPlan section table tbody,
+#nutritionalPlan section table th,
+#nutritionalPlan section table tr,
+#nutritionalPlan section table td {
+	padding: 15px 22px;
+}
+
+
+#nutritionalPlan section table thead {
+	background-color: #eee;
+}
+
+#nutritionalPlan section .share {
+	float: left;
+	margin-right: 10px;
+}
+
+#nutritionalPlan section .share ul li {
+	display: inline-block;
+	padding: 15px 20px;
+}
+
+#nutritionalPlan section button.print {
+	float: right;
+	padding: 10px 30px;
+}
+
+#nutritionalPlan section.customMealPlan select {
+	width: 100%;
+}
+
+/* ==========================================================================
+   MEDIA
+   ========================================================================== */
+
+#media {}
+
+#media main .col_1_of_5 {
+	float: left;
+}
+
+#media main .subNav {
+	float: left;
+}
+
+#media main .subNav > nav ul li {
+	display: inline-block;
+	padding: 15px 30px;
+	border:	1px solid #ddd;
+}
+
+#media main #videos {
+	margin-top: 30px;
+}
+
+#media main #videos > ul > li {
+	padding: 10px;
+	border: 1px solid #ddd;
+	margin-bottom: 30px;
 }
 
 /* ==========================================================================
@@ -545,6 +728,13 @@ footer p > a:visited {
     height: 200px;
     max-width: 250px;
     padding: 1%;
+}
+
+/* to remove */
+#fitnessPlan section.customPlan,
+#fitnessPlan section.autoPlan,
+.threemeal {
+	display: none;
 }
 
 

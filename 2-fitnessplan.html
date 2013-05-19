@@ -168,15 +168,175 @@
                         </form>
 
                     </div>
-                    
-
                 </section>
 
-                <!-- New Auto Plan -->
-                <section class="autoPlan clearfix"></section>
+                <!-- Auto Plan -->
+                <section class="autoPlan clearfix">
+                    
+                    <div class="col_2_of_2">
+                        <form method="#" action="#" class="clearfix">
+                            <span class="col_1_of_2">
+                                <span class="col_1_of_2 clearfix">
+                                    <label for="Plan title">Plan title</label>
+                                    <input type="text" value="">
+                                </span>
+
+                                <span class="col_1_of_2 clearfix">
+                                    <label for="sessionPerWeek">Sessions per week : </label>
+                                    <select>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select> 
+                                </span>
+
+                                <span class="col_1_of_2 clearfix">
+                                    <label for="minutesPerSession">Minutes p/session : </label>
+                                    <select>
+                                        <option>20</option>
+                                        <option>30</option>
+                                        <option>45</option>
+                                    </select> 
+                                </span>
+                            </span>
+
+                            <span class="col_1_of_2">
+                                <span class="col_1_of_2 clearfix">
+                                    <label for="Start date">Start Date : </label>
+                                    <input type="date" name="startDate"> 
+                                </span>
+
+                                <span class="col_1_of_2 clearfix">
+                                    <label for="End date">End Date : </label>
+                                    <input type="date" name="endDate"> 
+                                </span>
+
+                                <button class="btn">Generate New Plan 0</button>
+
+                            </span>
+                        </form>
+
+                        <div class="nav-tabs clearfix">
+                            <ul>
+                                <li class="tab active">
+                                    <a href="#">Week1</a>
+                                </li>
+                                <li class="tab">
+                                    <a href="#">Week2</a>
+                                </li>
+                                <li class="tab">
+                                    <a href="#">Week3</a>
+                                </li>
+                            </ul>
+
+                            <!-- table-->
+                            <table class="week1">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>Monday</th>
+                                        <th>Tuesday</th>
+                                        <th>Wednesday</th>
+                                        <th>Thursday</th>
+                                        <th>Friday</th>
+                                        <th>Saturday</th>
+                                        <th>Sunday</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>CARDIO</strong></td>
+                                        <td>30min</td>
+                                        <td>Rest</td>
+                                        <td>30min</td>
+                                        <td>Rest</td>
+                                        <td>30min</td>
+                                        <td>Rest</td>
+                                        <td>Rest</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><strong>ABS</strong></td>
+                                        <td>Rest</td>
+                                        <td>30min</td>
+                                        <td>Rest</td>
+                                        <td>30min</td>
+                                        <td>Rest</td>
+                                        <td>30min</td>
+                                        <td>Rest</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><strong>UPPER BODY</strong></td>
+                                        <td>30min</td>
+                                        <td>Rest</td>
+                                        <td>10min</td>
+                                        <td>10min</td>
+                                        <td>30min</td>
+                                        <td>45min</td>
+                                        <td>Rest</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
 
                 <!-- Existing Plan -->
-                <section class="existingPlan clearfix"></section>
+                <section class="existingPlan clearfix">
+                    <!-- table-->
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Plan</th>
+                                <th>Sessions p/week</th>
+                                <th>Start Date</th>
+                                <th>End Date</th>
+                                <th>Progress</th>
+                                <th>Enable Plan</th>
+                                <th>Disable Plan</th>
+                                <th>Remove</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Burn To Hell</strong></td>
+                                <td>4</td>
+                                <td>20/10/2012</td>
+                                <td>20/12/2012</td>
+                                <td>3 Stars</td>
+                                <td><button type="button">Enable</button>
+                                <td><button type="button">Disable</button>
+                                <td><input type="checkbox" value=""></td>
+                            </tr>
+
+                            <tr>
+                                <td><strong>Light Fitness</strong></td>
+                                <td>2</td>
+                                <td>16/03/2012</td>
+                                <td>25/05/2012</td>
+                                <td>1 Stars</td>
+                                <td><button type="button">Enable</button>
+                                <td><button type="button">Disable</button>
+                                <td><input type="checkbox" value=""></td>
+                            </tr>
+
+                            <tr>
+                                <td><strong>Cardio  Only</strong></td>
+                                <td>3</td>
+                                <td>01/01/2012</td>
+                                <td>01/03/2012</td>
+                                <td>4 Stars</td>
+                                <td><button type="button">Enable</button>
+                                <td><button type="button">Disable</button>
+                                <td><input type="checkbox" value=""></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                </section>
 
             </div><!-- //end Training Section -->
 
