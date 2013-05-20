@@ -42,18 +42,33 @@
        
 </head>
 <body id="introPage">
-   <!-- Facebook -->
-    <div id="fb-root"></div>
-    <script>
-        (function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=161033377314804";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+// Additional JS functions here
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : 501551053244526,        // App ID
+      status     : true,           // check login status
+      cookie     : true,           // enable cookies to allow the server to access the session
+      xfbml      : true            // parse page for xfbml or html5 social plugins like login button below
+    });
+
+    // Put additional init code here
+  };
+
+  // Load the SDK Asynchronously
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/all.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+
+</script>
     
+
     <header>
        
         <div class="innerContainer">
@@ -116,8 +131,14 @@
                         <h5>You can register with or without a facebook account!</h5> 
 
                         <div class="col_1_of_2">
-                                
-                            <div class="fb-login-button" data-show-faces="false" data-width="200" data-max-rows="1">Sign in with Facebook</div>
+
+                            <div
+                              class="fb-login-button"
+                              data-show-faces="true"
+                              data-width="350"
+                              data-max-rows="1"
+                              data-scope="publish_actions">
+                            </div>
                         </div>
 
                         <div class="col_1_of_2"> 
@@ -151,7 +172,7 @@
                         <h4>Welcome back! How did you register the first time?</h4> 
 
                         <div class="col_1_of_2">  
-                            <div class="fb-login-button" data-show-faces="false" data-width="200" data-max-rows="1">Sign in with Facebook</div>
+                            <div class="fb-login-button" data-show-faces="true" data-width="200" data-max-rows="2"></div>
                         </div>
 
                         <div class="col_1_of_2">
@@ -199,7 +220,7 @@
 
             -->
 
-            <iframe width="830" height="466" frameborder="0" allowfullscreen="" src="assets/videos/nickelback.mp4?theme=light&amp;color=white&amp;controls=1&amp;HD=1&amp;rel=0&amp;showinfo=0" style="width: 830px; height: 466.875px;"></iframe>
+            <iframe width="830" height="466" frameborder="0" allowfullscreen="" src="!!!!!!!!!!assets/videos/nickelback.mp4?theme=light&amp;color=white&amp;controls=1&amp;HD=1&amp;rel=0&amp;showinfo=0" style="width: 830px; height: 466.875px;"></iframe>
 
             </div>
         </div>

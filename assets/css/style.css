@@ -118,6 +118,11 @@ header nav ul li:hover {
 	width: 30%;
 }
 
+#introPage main .userAccessBox #login,
+#introPage main .userAccessBox #register {
+	display: none;
+}
+
 #introPage main .userAccessBox a {
 	font-family: 'Bevan', cursive;
 	display: block; 
@@ -137,7 +142,7 @@ header nav ul li:hover {
 	display: none;
 	background-color: #fff;
 	padding: 1em 0;
-	text-align: right;
+	text-align: center;
 }
 
 #introPage main #hiddenUserAccess .close {
@@ -148,6 +153,7 @@ header nav ul li:hover {
 	width: 30px;
 	height: 30px;
 	background-size: 100%;
+	float: right;
 }
 
 #introPage main #hiddenUserAccess .col_1_of_2 {
@@ -162,6 +168,10 @@ header nav ul li:hover {
 #introPage main #hiddenUserAccess #register h5 {
 	margin-bottom: 1em;
 	color: #333 !important;
+}
+
+#introPage main #hiddenUserAccess #register .col_1_of_2:last-child {
+	border-left: 1px solid #ddd;
 }
 
 #introPage main #hiddenUserAccess .btn-submit {
